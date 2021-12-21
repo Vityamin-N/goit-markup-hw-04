@@ -336,7 +336,7 @@ ul {
     color: var(--accent-color);
 }
 
-.footer-address, .footer-link:first-child{
+.footer-address, .footer-link:first-of-type{
     margin-bottom: 9px;
 }
 
@@ -407,7 +407,7 @@ ul {
 }
 
 .projects-item:nth-last-child(-n + 3) {
-    margin-right: 0;
+    margin-bottom: 0;
 }
 
 .projects-name{
