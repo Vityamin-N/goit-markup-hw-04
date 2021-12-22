@@ -62,9 +62,9 @@ ul {
 }
 /* -------------------HEADER------------------- */
 
-.header .container {
+.header-container {
     display: flex;
-    align-items: space-between;
+    justify-content: space-between;
 }
 
 .header {
@@ -238,6 +238,21 @@ ul {
     line-height: 1.7;
 }
 
+.feature-box {
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+}
+
 .work{
     padding-top: 0px;
 }
@@ -301,6 +316,7 @@ ul {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .team-item{
@@ -313,7 +329,9 @@ ul {
 
 .team-social-list{
     display: flex;
-    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding-left: 32px;
 }
 
 .team-social-item + .team-social-item {
@@ -341,6 +359,49 @@ ul {
     fill: currentColor;
 }
 
+/*------------------CLIENTS----------------------------- */
+
+.clients-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--second-accent-color);
+}
+
+.clients .list {
+    display: flex;
+}
+
+.clients-item {
+    margin-right: 30px;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.clients-item:last-child {
+    margin-right: 0;
+}
+
+.clients-link:hover,
+.clients-link:focus,
+.clients-icon:hover,
+.clients-icon:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 /*------------------------FOOTER---------------------*/
 
 .footer-container{
@@ -349,7 +410,6 @@ ul {
 }
 
 .footer {
-    display: flex;
     background-color: var(--hero-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -402,9 +462,11 @@ ul {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
+    text-transform: uppercase;
 }
 
 .social-networks-list{
+    display: flex;
     width: 205px;
     margin-top: 20px;
     padding: 0px;
