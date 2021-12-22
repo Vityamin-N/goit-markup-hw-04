@@ -154,6 +154,7 @@ ul {
 }
 
 .header-contacts-icon{
+    fill: currentColor;
     margin-right: 10px;
 }
 
@@ -472,12 +473,26 @@ ul {
     padding: 0px;
 }
 
+.social-networks-item:not(:last-child){
+    margin-right: 10px;
+}
+
 .social-networks-list:hover{
     border-color: var(--accent-color);
 }
 
 .social-networks-link{
-    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-networks-link:hover{
+    background-color: var(--accent-color);
 }
 
 .social-networks-icon{
