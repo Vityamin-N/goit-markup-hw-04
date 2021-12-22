@@ -8,7 +8,7 @@
     --hero-background-color: #2f303a;
     --second-accent-color: #000000;
     --grid-background: #f5f4fa;
-    --icon-color: ##AFB1B8;
+    --icon-color: #AFB1B8;
 }
 
 html{
@@ -477,7 +477,8 @@ ul {
     margin-right: 10px;
 }
 
-.social-networks-list:hover{
+.social-networks-list:hover
+{
     border-color: var(--accent-color);
 }
 
@@ -491,7 +492,8 @@ ul {
     border-radius: 50%;
 }
 
-.social-networks-link:hover{
+.social-networks-link:hover,
+.social-networks-link:focus {
     background-color: var(--accent-color);
 }
 
