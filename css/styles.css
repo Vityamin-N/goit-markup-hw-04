@@ -343,7 +343,13 @@ ul {
 
 /*------------------------FOOTER---------------------*/
 
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
+
 .footer {
+    display: flex;
     background-color: var(--hero-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -385,6 +391,40 @@ ul {
 
 .footer-address, .footer-link:first-of-type{
     margin-bottom: 9px;
+}
+
+.footer-social-networks{
+    margin-left: 70px;
+}
+
+.social-networks-title{
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+.social-networks-list{
+    width: 205px;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.social-networks-list:hover{
+    border-color: var(--accent-color);
+}
+
+.social-networks-link{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-networks-icon{
+    fill: var(--white-color);
+}
+
+.social-networks-icon:hover,
+.social-networks-icon:focus {
+    background-color: var(--accent-color);
 }
 
 /*-------------PORTFOLIO----------------*/
